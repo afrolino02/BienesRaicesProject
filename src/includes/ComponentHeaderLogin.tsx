@@ -1,10 +1,8 @@
-import { Link, BrowserRouter, Routes, Route } from 'react-router-dom'
-import {ComponentHeaderLogin } from './includes/ComponentHeaderLogin'
-
-
-export const ComponenteHeader = () => {
+import { Link, BrowserRouter } from 'react-router-dom'
+export  const ComponentHeaderLogin = () => {
      return (
- 
+
+        <BrowserRouter>
     <header className="header">
         <div>
             <img className="logo" src="../public/logo.svg" alt="" />
@@ -20,25 +18,13 @@ export const ComponenteHeader = () => {
 
             <div className="login">
                 <img className="logo--login" src="../public/person.svg" alt="" />
-                <Link to='./pages/login' relative="path"> <p>Logeate
-                
-                    
-                </p></Link>
-                
+                <p>Logeate
+                <Link to='./'></Link>
+                </p>
             </div>
         </nav>
     </header>
-    
-);
-}
-<BrowserRouter>
-    <Routes>
-      <Route path="./ComponentHeaderLogin" element={<ComponentHeaderLogin />}>
 
-      </Route>
-    </Routes>
     </BrowserRouter>
-export const enrutador = () => {
-    
-  
+);
 }
